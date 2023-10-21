@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Text, View, TouchableOpacity, Image} from 'react-native';
 import {styles} from './styles';
 
-const SearchItem = ({e}) => {
+const SearchItem = ({e, navigation}) => {
   return (
-    <TouchableOpacity style={styles.item}>
+    <TouchableOpacity
+      style={styles.item}
+      onPress={() => navigation.navigate('ItemDetails', {item: e})}>
       <View style={styles.infoSection}>
         <View>
           <Text style={styles.title} numberOfLines={3}>

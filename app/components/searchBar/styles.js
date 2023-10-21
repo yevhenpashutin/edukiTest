@@ -4,15 +4,15 @@ export const styles = StyleSheet.create({
   searchContainer: {
     marginVertical: 25,
     height: 40,
-    marginHorizontal: 15,
+    marginRight: 15,
     flexDirection: 'row',
   },
 
   inputInner: {
     flex: 1,
     backgroundColor: '#f3f3f3',
-    borderWidth: 2,
-    borderColor: '#eeeeee',
+    borderWidth: 1,
+    borderColor: '#98a7a7',
     paddingLeft: 10,
   },
 
